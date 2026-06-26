@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{background:#FBF7F1;color:#3A3338;font-family:Georgia,"Times New Roman","Liberation Serif",serif;}
+.page{padding:48px 62px 38px 62px;}
+.logo{display:block;margin:0 auto 6px auto;width:226px;}
+.rule{border:0;border-top:1px solid #D8C9B0;width:78%;margin:12px auto 4px auto;}
+.rule-gold{height:2px;width:54px;background:#B08D57;margin:14px auto;}
+.kicker{text-align:center;letter-spacing:5px;font-size:10.5px;color:#9A8478;text-transform:uppercase;font-family:Arial,"Liberation Sans",sans-serif;margin-top:6px;}
+h1{text-align:center;color:#7B2D2D;font-size:30px;font-weight:normal;letter-spacing:1px;margin:7px 0 2px 0;}
+.subtitle{text-align:center;color:#7d6b78;font-style:italic;font-size:15px;margin-bottom:4px;}
+.meta{width:100%;text-align:center;margin:16px 0 4px 0;}
+.meta td{padding:0 13px;vertical-align:top;}
+.meta .ml{font-family:Arial,"Liberation Sans",sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#A8927F;display:block;margin-bottom:3px;}
+.meta .mv{font-size:12.5px;color:#4a4147;}
+.section{page-break-inside:avoid;margin-top:18px;}
+.cat{text-align:center;color:#7B2D2D;font-size:16px;letter-spacing:1px;}
+.cat-sub{text-align:center;color:#9A8478;font-style:italic;font-size:11px;margin-top:1px;}
+.cat-orn{text-align:center;color:#B08D57;font-size:10px;margin:6px 0 10px 0;letter-spacing:6px;}
+.items{max-width:580px;margin:0 auto;}
+.item{text-align:center;margin:8px 0;}
+.item .name{color:#3A2F2F;font-size:13.5px;}
+.item .desc{display:block;color:#8a7a82;font-style:italic;font-size:10.5px;margin-top:1px;}
+.invest{page-break-inside:avoid;margin:24px auto 6px auto;max-width:520px;border:1.5px solid #B08D57;background:#FFFFFF;padding:20px 26px 20px 26px;text-align:center;}
+.invest .lbl{font-family:Arial,"Liberation Sans",sans-serif;letter-spacing:4px;font-size:10px;text-transform:uppercase;color:#9A8478;}
+.invest .total{color:#7B2D2D;font-size:33px;margin:7px 0 2px 0;letter-spacing:1px;}
+.invest .per{color:#5a4f55;font-size:12.5px;font-style:italic;margin-bottom:12px;}
+.invest .incl-h{font-family:Arial,"Liberation Sans",sans-serif;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:#A8927F;margin-bottom:6px;}
+.invest .incl{list-style:none;font-size:11.5px;color:#4a4147;line-height:1.65;}
+.invest .incl li:before{content:"\2022";color:#B08D57;padding-right:7px;}
+.bev{text-align:center;font-size:10.5px;font-style:italic;color:#9A8478;margin-top:9px;}
+.note{max-width:540px;margin:14px auto 0 auto;text-align:center;color:#6a5f64;font-size:11px;font-style:italic;line-height:1.6;}
+.valid{text-align:center;font-family:Arial,"Liberation Sans",sans-serif;font-size:9px;letter-spacing:1.5px;color:#A8927F;text-transform:uppercase;margin-top:12px;}
+.footer{text-align:center;margin-top:18px;padding-top:11px;border-top:1px solid #E2D6C2;color:#7B2D2D;font-size:11px;letter-spacing:2px;}
+.footer .sub{display:block;color:#9A8478;font-size:9px;letter-spacing:2px;font-family:Arial,"Liberation Sans",sans-serif;text-transform:uppercase;margin-top:3px;}
+</style></head><body><div class="page">
+<img class="logo" src="data:image/png;base64,{{LOGO_B64}}">
+<hr class="rule">
+<div class="kicker">{{KICKER}}</div>
+<h1>{{TITULO}}</h1>
+<div class="subtitle">{{SUBTITULO}}</div>
+<div class="rule-gold"></div>
+<table class="meta"><tr>{{META}}</tr></table>
+{{SECOES}}
+<div class="invest">
+<div class="lbl">Investimento</div>
+<div class="total">{{TOTAL}}</div>
+<div class="per">{{PER}}</div>
+<div class="incl-h">A proposta inclui</div>
+<ul class="incl">{{INCLUI}}</ul>
+</div>
+<div class="bev">{{NOTA_EXCLUSOES}}</div>
+<div class="note">{{NOTA_FINAL}}</div>
+<div class="valid">{{VALIDADE}}</div>
+<div class="footer">NOBRE BISTRÔ<span class="sub">Gastronomia &amp; Eventos &middot; Osasco — São Paulo</span></div>
+</div></body></html>
