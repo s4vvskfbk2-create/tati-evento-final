@@ -36,6 +36,23 @@ tem pouca familiaridade com sistemas). Ao tocar num grupo, aparecem as sub-abas 
 
 O **Atendente** só vê o grupo **Operação**; a **Cozinha** só vê **Cozinha**.
 
+## Login por PIN, comissão, margem e despesas
+
+- **PIN individual por funcionário** — cada pessoa cadastrada na aba **Pessoas**
+  pode ter um PIN próprio e um papel (Gerente / Atendente / Cozinha). Ao entrar
+  com o PIN, o sistema sabe **quem** está operando, e toda venda do balcão guarda
+  o nome do operador. As senhas-mestras (`nobre2025`, `balcao`, `cozinha`)
+  continuam funcionando como atalho do dono.
+- **Comissão de venda** — cada funcionário tem um **% de comissão** (aba Pessoas).
+  A aba **Comissões** (dentro do grupo Equipe) mostra, por período (hoje / quinzena
+  / mês), quanto cada um vendeu e quanto recebe de comissão, com botão de enviar no
+  WhatsApp.
+- **Margem de lucro** — cada produto do **Cardápio** agora tem um campo de **custo**.
+  Os **Relatórios** mostram lucro bruto, margem % e **lucro líquido do mês**
+  (vendas − custo dos produtos − despesas).
+- **Despesas** — aba nova (grupo Dinheiro) para lançar contas/gastos por categoria;
+  entram no cálculo do lucro líquido.
+
 ## Segurança / Anti-roubo
 
 - **Cancelar pedido exige a senha do gerente** — um atendente sozinho não consegue
