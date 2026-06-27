@@ -36,6 +36,16 @@ tem pouca familiaridade com sistemas). Ao tocar num grupo, aparecem as sub-abas 
 
 O **Atendente** só vê o grupo **Operação**; a **Cozinha** só vê **Cozinha**.
 
+## Dashboard e fechamento de caixa
+
+- **Resumo (Dashboard)** — tela inicial do gerente: vendas do dia, lucro/comissão
+  do dia, pedidos em produção, aguardando pagamento, fiado em aberto, despesas do
+  mês, alerta de estoque baixo e os mais vendidos. Os cards levam direto pra tela.
+- **Fechar caixa** (grupo Dinheiro) — controle anti-roubo: o sistema calcula o
+  dinheiro esperado na gaveta (troco inicial + vendas em dinheiro, excluindo
+  PIX/cartão) e você digita o que contou. Ele mostra se **bate, sobra ou falta**,
+  e grava o fechamento com a diferença, hora e operador.
+
 ## Login por PIN, comissão, margem e despesas
 
 - **PIN individual por funcionário** — cada pessoa cadastrada na aba **Pessoas**
