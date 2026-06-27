@@ -19,6 +19,34 @@ navegador ou publicado em hospedagem estática (Vercel, Netlify, GitHub Pages).
 
 > Recomendado trocar essas senhas antes de uso real (estão no `index.html`, na função `App`).
 
+## Navegação (organizada em grupos)
+
+As telas ficam agrupadas em **7 grupos grandes com ícone** (mais fácil para quem
+tem pouca familiaridade com sistemas). Ao tocar num grupo, aparecem as sub-abas dele:
+
+| Grupo          | Ícone | O que tem dentro                                   |
+|----------------|-------|----------------------------------------------------|
+| Operação       | 🍽️   | Balcão · Pedidos · Cozinha                          |
+| Dinheiro       | 💰    | Caixa do dia · Relatórios · Consultor IA           |
+| Fiado          | 📒    | Em aberto · Fechar quinzena · Histórico            |
+| Cardápio       | 📖    | Cardápio · Receitas/CMV                            |
+| Clientes       | ⭐    | Clientes (fidelidade) · Centro IA                  |
+| Equipe         | 👥    | Pessoas · Horários                                 |
+| Estoque        | 📦    | Produtos · Insumos · Fornecedores · Compras (ERP)  |
+
+O **Atendente** só vê o grupo **Operação**; a **Cozinha** só vê **Cozinha**.
+
+## Segurança / Anti-roubo
+
+- **Cancelar pedido exige a senha do gerente** — um atendente sozinho não consegue
+  cancelar uma venda. Todo cancelamento grava data, hora, motivo e quem autorizou
+  (tabelas `audit_logs` e `system_events`).
+- **Telas de dinheiro são exclusivas do gerente** — Caixa, Relatórios, Fiado,
+  Quinzena, Equipe e todo o ERP ficam invisíveis para atendente e cozinha.
+- **A tela de login não mostra mais as senhas** (antes elas apareciam escritas).
+- Recomendado **trocar as senhas** padrão antes do uso real (estão no `index.html`,
+  função `App`, e o gatilho do cancelamento usa `nobre2025`).
+
 ## Funcionalidades
 
 - **Balcão** — lançar pedidos, formas de pagamento, fiado para profissionais
