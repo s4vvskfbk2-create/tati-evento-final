@@ -36,6 +36,18 @@ tem pouca familiaridade com sistemas). Ao tocar num grupo, aparecem as sub-abas 
 
 O **Atendente** só vê o grupo **Operação**; a **Cozinha** só vê **Cozinha**.
 
+## Meta por funcionário e estoque unificado
+
+- **Meta por funcionário** — cada pessoa (aba Pessoas) tem uma **meta de venda por
+  dia**. Na aba **Comissões**, além de quanto vendeu/recebe, aparece a barra de
+  progresso da meta (do dia / período).
+- **Estoque unificado (venda ↔ insumos do ERP)** — no **Cardápio**, ligue cada
+  produto à sua **receita (ficha técnica)**. Quando a venda é concluída, o sistema
+  baixa automaticamente os **insumos** do estoque do ERP, conforme a receita e o
+  rendimento (inclui sub-receitas). É à prova de baixa dupla (marca o pedido) e só
+  age em produtos com receita ligada. Cadastre receitas/insumos nas abas Receitas e
+  Insumos. Lógica validada contra o banco real.
+
 ## Comunicação, ajustes, metas e relatórios
 
 - **Chamados de mesa** — o cliente pode "Chamar atendente" / "Pedir a conta" pelo
