@@ -36,6 +36,31 @@ tem pouca familiaridade com sistemas). Ao tocar num grupo, aparecem as sub-abas 
 
 O **Atendente** só vê o grupo **Operação**; a **Cozinha** só vê **Cozinha**.
 
+## Comunicação, ajustes, metas e relatórios
+
+- **Chamados de mesa** — o cliente pode "Chamar atendente" / "Pedir a conta" pelo
+  cardápio; aparece um aviso no **Resumo** e na aba **Pedidos**, com botão "Atendido".
+- **Observação do cliente** — o que a cliente escreve no pedido (ex: "sem cebola")
+  e o telefone dela aparecem no card do pedido, pra chegar organizado na cozinha.
+- **Ajustes** (grupo Ajustes) — troque as **senhas** (gerente/atendente/cozinha e a
+  senha de cancelamento) e defina a **meta de vendas do dia** sem mexer no código.
+  Existe uma senha-mestra de emergência (`nobre2025`) para o dono nunca ficar travado.
+- **Meta do dia** — barra de progresso no Resumo mostrando quanto falta pra meta.
+- **Exportar relatório** — em Relatórios, botão **Exportar mês (CSV)** gera uma
+  planilha (abre no Excel/Sheets) com os pedidos do mês e os totais, além de um
+  botão **PDF** (imprimir) pro contador.
+
+## Cardápio do cliente (cardapio.html)
+
+Arquivo **opcional** `cardapio.html`: um cardápio digital completo que grava o
+pedido no mesmo banco do admin (cai direto em Pedidos/Cozinha como canal "app",
+status "pendente" para o atendente aceitar). Inclui: navegação por categorias com
+fotos, "mais pedidos", carrinho, upsell de sobremesa, captura de telefone para
+fidelidade, acompanhamento do pedido em tempo real, **chamar atendente / pedir a
+conta**, contato por WhatsApp e **avaliação por estrelas**. Ajuste no topo do
+arquivo o WhatsApp e o PIX da loja. Se você já tem um cardápio integrado, use este
+apenas se quiser migrar.
+
 ## Dashboard e fechamento de caixa
 
 - **Resumo (Dashboard)** — tela inicial do gerente: vendas do dia, lucro/comissão
